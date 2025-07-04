@@ -1,59 +1,83 @@
-# OasisInfobyte-Python-Internship Projects
-Python Internship Projects - Chat Application, Weather App, and Voice Assistant.
+# Oasis Infobyte Python Internship Projects
 
-[![GitHub repo stars](https://img.shields.io/github/stars/Krrish-J12/OasisInfobyte-Python-Internship?style=social)](https://github.com/Krrish-J12/OasisInfobyte-Python-Internship)
-
-Welcome to my portfolio repository showcasing **three key projects** developed during my Oasis Infobyte Python internship:
-
----
-
-## 📂 Projects Overview
-
-### 1. Chat Application
-A real-time multi-client chat system built using Python's `socket` library, threading, and terminal UI enhancements.
-- **Technologies**: Python, `socket`, `threading`, `colorama`
-- **Features**: User nicknames, multi-client broadcasting, message handling
-
-🔗 [View README](./Chat_Application/README.md)
+**Intern Name:** Krish Jadhav  
+**Domain:** Python Programming  
+**Internship Level:** Beginner  
+**Internship Type:** Virtual  
 
 ---
 
-### 2. Weather Application
-A GUI desktop tool to fetch current weather using OpenWeatherMap API.
-- **Technologies**: Python, `requests`, `tkinter`, `PIL`
-- **Features**: City input, weather display, unit toggle, icon support
+## 📌 Projects Included
 
-🔗 [View README](./Weather_App/README.md)
+### 1. 💬 Chat Application
 
----
+**Description:**  
+A real-time console-based chat app using sockets and threading.
 
-### 3. Voice Assistant
-A voice-controlled assistant that:
-- Listens via selected microphone
-- Executes commands: open websites, fetch time/date, search, play YouTube songs
-- **Technologies**: `sounddevice`, `speech_recognition`, `gTTS`, `pywhatkit`, `tkinter`
+**Features:**
+- Server & multi-client communication
+- Nickname prompt for each user
+- Server broadcast
+- Exit handling
+- Colored logs (via Colorama)
 
-🔗 [View README](./Voice_Assistant/README.md)
+**Tech Stack:**  
+`Python`, `socket`, `threading`, `colorama`
 
----
-
-## 📋 Final Summary
-✔️ Consolidated summary of skills learned is in [Final_Summary.md](./Final_Summary.md)
+[📂 View Code](./Chat_Application/)
 
 ---
 
-## 🛠️ Setup & Installation
+### 2. 🌤️ Weather App
 
-```bash
-git clone https://github.com/Krrish-J12/OasisInfobyte-Python-Internship.git
-cd OasisInfobyte-Python-Internship
+**Description:**  
+A GUI-based weather checker using OpenWeatherMap API.
 
-# Setup virtual environment
-python -m venv myenv
-source myenv/bin/activate  # Linux/macOS
-myenv\Scripts\activate     # Windows PowerShell
+**Features:**
+- Fetch current weather for any city
+- Weather icon, temperature, humidity, wind
+- Unit toggle (Celsius/Fahrenheit)
+- Tkinter GUI
 
-# Install dependencies per project
-pip install -r Chat_Application/requirements.txt
-pip install -r Weather_App/requirements.txt
-pip install -r Voice_Assistant/requirements.txt
+**Tech Stack:**  
+`Python`, `requests`, `Tkinter`, `Pillow`
+
+[📂 View Code](./Weather_App/)
+
+---
+
+### 3. 🧠 Voice Assistant
+
+**Description:**  
+A basic assistant that performs actions via voice commands.
+
+**Features:**
+- Record voice using selected microphone
+- Responds using Google TTS
+- Plays songs, fetches Wikipedia info, opens Google/Youtube
+- Pause/Resume/Exit functionality
+- Tkinter-based GUI with background image
+
+**Tech Stack:**  
+`sounddevice`, `gTTS`, `speech_recognition`, `pywhatkit`, `Tkinter`, `PIL`
+
+[📂 View Code](./Voice_Assistant/)
+
+---
+
+## 🏁 License
+
+This repository is licensed under the [MIT License](./LICENSE).
+
+---
+
+## 🙏 Acknowledgements
+
+Thanks to **Oasis Infobyte** for the opportunity to learn and implement real-world Python projects.
+
+---
+
+## ✉️ Contact
+
+**GitHub:** [@Krrish-J12](https://github.com/Krrish-J12)  
+**Mail:** krishjadhav253@gmail.com
