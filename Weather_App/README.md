@@ -44,7 +44,7 @@ pip install requests pillow
 
 ### Add your OpenWeatherMap API key:
 ## Open weather_app.py and replace this line:
-api_key = "ea8ccc886b6fxxx36c9718427ea40bxxc"
+api_key = "62a716e103618d44a2099a06053ca904"
 
 # with your own API key (you can register at https://openweathermap.org/api).
 

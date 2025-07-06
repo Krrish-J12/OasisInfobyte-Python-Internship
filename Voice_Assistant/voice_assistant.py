@@ -4,6 +4,8 @@ from scipy.io.wavfile import write
 import speech_recognition as sr
 from gtts import gTTS
 import os
+import pyautogui
+import time
 import webbrowser
 import datetime
 import wikipedia
@@ -77,9 +79,11 @@ def process_command(command):
         print(f"Detected song to play: {song}")
 
         if song:
-            speak(f"Playing {song} on YouTube, Please click play.")
+            speak(f"Playing {song} on YouTube. Please wait...")
             try:
-                pywhatkit.playonyt(song)  # type: ignore
+                pywhatkit.playonyt(song) # type: ignore
+                time.sleep(6)  # wait for YouTube to load
+                pyautogui.press("enter")  # simulate play
                 speak("Playing music.")
             except Exception as e:
                 speak("Sorry, I couldn't play the song due to an error.")
@@ -100,7 +104,7 @@ def process_command(command):
     elif 'wikipedia' in command:
         topic = command.replace('wikipedia', '').strip()
         try:
-            info = wikipedia.summary(topic, sentences=2)
+            info = wikipedia.summary(topic, sentences=5)
             speak(info)
         except:
             speak("Sorry, I couldn't find anything on that topic.")
