@@ -2,10 +2,15 @@ import requests
 import tkinter as tk
 from PIL import Image, ImageTk
 from io import BytesIO
+from dotenv import load_dotenv
+import os
 
-# ✅ Your OpenWeatherMap API key
-api_key = "62a716e103618d44a2099a06053ca904"
+load_dotenv()  # Load variables from .env file
+
+# ✅ Secure API key loading
+api_key = os.getenv("WEATHER_API_KEY")
 current_unit = "metric"
+
 
 # GUI setup
 root = tk.Tk()

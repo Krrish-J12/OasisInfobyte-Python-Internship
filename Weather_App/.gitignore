@@ -1,0 +1,17 @@
+# 🔒 Environment file with your API key
+.env
+
+# 🐍 Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 💻 OS and editor-specific files (optional but good to include)
+.DS_Store
+*.swp
+
+# 🧪 Optional: Virtual environment folder (if you create one)
+venv/
+myenv/
+env/
